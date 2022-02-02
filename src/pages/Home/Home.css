@@ -1,0 +1,33 @@
+.logo-league{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+}
+.active-league{
+    color: blue;
+    text-decoration: none;
+}
+.inactive-league{
+    color: gray;
+    pointer-events: none;
+    text-decoration: none;
+}
+.row{
+    width: 100%;
+    margin-top: 108px;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.home-tittle{
+    font-size: xx-large;
+    cursor: default;
+    border-bottom: solid 1px #dbdbdb;
+}
+.home-tittle:hover{
+    opacity: 0.7;
+}
+.home-tittle::first-letter{
+    color: chocolate;
+
+}
