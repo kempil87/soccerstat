@@ -3,7 +3,7 @@
     height: 54px;
     border-bottom: solid 1px #dbdbdb;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /*position: fixed;*/
     font-family: 'Quicksand', sans-serif;

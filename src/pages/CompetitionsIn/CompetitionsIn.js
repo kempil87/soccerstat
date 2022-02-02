@@ -39,7 +39,7 @@ export const CompetitionsIn = () => {
                 <div className={"mt-4 col-3"}>
                     <div key={item.id} className={""} >
                         <div className="item-teams" >
-                            <img className="logo-teams " style={{marginRight:15,fontFamily:'Quicksand',textDecoration:"none"}} src={item.crestUrl}/>
+                            <img className="logo-teams " style={{marginRight:15,fontFamily:'Quicksand',textDecoration:"none"}} src={item.crestUrl} alt="logo-club"/>
                             <Link to={`/team/${item.id}`}>
                                 {item.name}
                             </Link>

@@ -9,9 +9,9 @@ const Header = () => {
                 <img className="header-logo"
                      src="https://www.soccerstat.net/wp-content/uploads/2019/07/Soccer-Stat-Footer-Logo.png"/>
             </div>
-            <div className="header-search">
-                <input className="search-input" type="text" placeholder="Найти"/>
-            </div>
+            {/*<div className="header-search">*/}
+            {/*    <input className="search-input" type="text" placeholder="Найти"/>*/}
+            {/*</div>*/}
 
             <div className="header-right" >
                 <Link to="/"  className="header-content" >Home</Link>

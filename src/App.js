@@ -6,7 +6,7 @@ import {AboutPage} from "./pages/About/AboutPage";
 import {CompetitionsIn} from "./pages/CompetitionsIn/CompetitionsIn";
 import {Team} from "./pages/Team/Team";
 import {NotificationContainer} from "react-notifications";
-import {Fotter} from "./components/Footer/Fotter";
+import {Footer} from "./components/Footer/Footer";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <Route path="/team/:id" element={<Team/>} />
         </Routes>
         {/*<NotificationContainer/>*/}
-        <Fotter/>
+        <Footer/>
     </div>
 
 );
