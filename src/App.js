@@ -7,24 +7,28 @@ import {CompetitionsIn} from "./pages/CompetitionsIn/CompetitionsIn";
 import {Team} from "./pages/Team/Team";
 import {NotificationContainer} from "react-notifications";
 import {Footer} from "./components/Footer/Footer";
+import {Contacts} from "./pages/Contacts/Contacts"
 
 
 function App() {
-  return (
-    <div className="App container">
-        <Header/>
+    return (
+        <div className="App container d-flex flex-column flex-fill" style={{}}>
+            <Header/>
+            <div className="flex-fill">
+                <Routes>
+                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
+                    <Route path="/about" element={<AboutPage/>}/>
+                    <Route path="/competition/:id" element={<CompetitionsIn/>}/>
+                    <Route path="/team/:id" element={<Team/>}/>
+                </Routes>
+            </div>
 
-        <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/about" element={<AboutPage/>} />
-            <Route path="/competition/:id" element={<CompetitionsIn/>} />
-            <Route path="/team/:id" element={<Team/>} />
-        </Routes>
-        {/*<NotificationContainer/>*/}
-        <Footer/>
-    </div>
+            {/*<NotificationContainer/>*/}
+            <Footer/>
+        </div>
 
-);
+    );
 }
 
 export default App;

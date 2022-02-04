@@ -1,33 +1,64 @@
-.logo-league{
+.logo-league {
     height: 50px;
     width: 50px;
-    border-radius:50%;
+    border-radius: 50%;
 }
-.active-league{
-    color: blue;
+
+.active-league {
+    color: black;
     text-decoration: none;
+    font-weight: bolder;
 }
-.inactive-league{
+
+.active-league:hover {
+    color: darkseagreen;
+}
+
+.inactive-league {
     color: gray;
     pointer-events: none;
     text-decoration: none;
+
 }
-.row{
+
+.row {
     width: 100%;
     margin-top: 108px;
     display: flex;
     font-family: 'Quicksand', sans-serif;
 
 }
-.home-tittle{
+
+.home-tittle {
     font-size: xx-large;
     cursor: default;
     border-bottom: solid 1px #dbdbdb;
+    font-family: 'Quicksand', sans-serif;
 }
-.home-tittle:hover{
-    opacity: 0.7;
-}
-.home-tittle::first-letter{
-    color: chocolate;
 
+.home-tittle:hover {
+    opacity: 0.7;
+
+}
+
+.home-tittle::first-letter {
+    color: darkseagreen;
+
+}
+
+.input-search {
+    width: 50%;
+    border-radius: 6px;
+    padding-left: 30px;
+    height: 34px;
+    color: black;
+    font-weight: normal;
+
+
+
+}
+.search{
+    position: absolute;
+    left: 16px;
+    top: 8px;
 }

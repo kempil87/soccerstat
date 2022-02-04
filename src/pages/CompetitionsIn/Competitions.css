@@ -1,29 +1,37 @@
-.logo-teams-table{
+.logo-teams-table {
     height: 38px;
     width: 38px;
     /*border-radius:25px;*/
 }
-.logo-teams{
+
+.logo-teams {
     height: 50px;
     width: 50px;
     /*border-radius:25px;*/
 }
 
-.teams-tittle{
+.teams-tittle {
     font-size: xx-large;
     cursor: default;
     border-bottom: solid 1px #dbdbdb;
+    font-family: 'Quicksand', sans-serif;
 }
-.teams-tittle:hover{
+
+.teams-tittle:hover {
     opacity: 0.7;
 }
-.teams-tittle::first-letter{
-    color: chocolate;
+
+.teams-tittle::first-letter {
+    color: darkseagreen;
 }
-.logo-table:first-letter{
-    color: white;
+
+
+.link {
+    color: black;
+    text-decoration: none;
 }
-.two-logo-table{
-    color: white;
-  }
+.link:hover{
+    opacity: 0.9;
+    color:darkseagreen;
+}
 
