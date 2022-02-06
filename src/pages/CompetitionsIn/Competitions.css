@@ -1,13 +1,11 @@
 .logo-teams-table {
     height: 38px;
     width: 38px;
-    /*border-radius:25px;*/
 }
 
 .logo-teams {
     height: 50px;
     width: 50px;
-    /*border-radius:25px;*/
 }
 
 .teams-tittle {
@@ -31,8 +29,9 @@
     color: black;
     text-decoration: none;
 }
-.link:hover{
+
+.link:hover {
     opacity: 0.9;
-    color:darkseagreen;
+    color: darkseagreen;
 }
 

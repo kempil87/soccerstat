@@ -8,11 +8,9 @@ import moment from "moment";
 export const Team = () => {
     const {id} = useParams();
     const [matches, setMatches] = useState([]);
-
     const getTeam = () => {
         api.get(`/teams/${id}/matches/`).then((res) => {
                 setMatches(res.data.matches)
-
             }
         )
     }
@@ -20,7 +18,6 @@ export const Team = () => {
     const getScore = (score) => {
         const homeScore = score.extraTime.homeTeam + score.halfTime.homeTeam + score.fullTime.homeTeam + score.penalties.homeTeam
         const awayScore = score.extraTime.awayTeam + score.halfTime.awayTeam + score.fullTime.awayTeam + score.penalties.awayTeam
-
         return {homeScore, awayScore}
     }
 
@@ -33,7 +30,6 @@ export const Team = () => {
             <div className={"teams-tittle"}>
               Calendar Club
             </div>
-
 
             {matches.map((item) => (
                 <div className="game-card col-3 mt-4" key={item.id}>

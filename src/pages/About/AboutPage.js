@@ -6,7 +6,6 @@ export const AboutPage =() =>{
         <div>
             <div className="home-tittle mt-3">About</div>
         </div>
-
     )
 
 }

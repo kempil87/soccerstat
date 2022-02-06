@@ -10,7 +10,6 @@ const ball = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhU
 export const HomePage = () => {
     const [competitions, setCompetitions] = useState([]);
     const [loader, setLoader] = useState(true);
-
     const getCompetitions = () => {
         setLoader(true)
 
