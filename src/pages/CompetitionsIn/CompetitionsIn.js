@@ -37,7 +37,7 @@ export const CompetitionsIn = () => {
 
     return (
         <div className="">
-            <div className={"teams-tittle"}>Soccer Clubs</div>
+                <div className={"teams-tittle"}>Soccer Clubs</div>
             {loader ? (
                     <div className="d-flex justify-content-center align-items-center mt-5">
                         <Spinner animation="border" variant="success"/>
@@ -51,7 +51,7 @@ export const CompetitionsIn = () => {
                                       <img className="logo-teams "
                                            style={{marginRight: 15, fontFamily: 'Quicksand', textDecoration: "none"}}
                                            src={item.crestUrl || ball} alt="logo-club"/>
-                                      <Link to={`/team/${item.id}`} className="link">
+                                      <Link to={`/team/${item.id}`}  className="link">
                                           {item.name}
                                       </Link>
                                   </div>

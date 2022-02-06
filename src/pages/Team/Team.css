@@ -1,0 +1,18 @@
+.utc-date {
+    font-weight: normal;
+}
+
+.game-card {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+/*.row{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
