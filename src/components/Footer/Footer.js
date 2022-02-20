@@ -1,18 +1,16 @@
 import React from "react";
 import "./Footer.css"
 
-
-
 export const Footer = () => {
     return (
-        <div className={"footer"}>
+        <div className={"footer d-flex flex-column align-items-center justify-content-between flex-md-row "}>
             <div className="footer-left">
                 © 2022 Глеб Макаров
                 <a className="git-tittle" href="https://github.com/kempil87">
                     GIT Kempil87
                 </a>
             </div>
-            <div className="footer-right">
+            <div className="footer-right d-flex">
                 <div className="footer-social">
                     <span>Social</span>
                     <a href="https://www.instagram.com/makarof87/?hl=ru">

@@ -39,13 +39,13 @@ export const HomePage = () => {
     }, []);
 
     return (
-        <div className="row">
-            <div className="home-tittle mt-3">Soccer Leagues</div>
-            <div className="mt-3 position-relative">
+        <div>
+            <div className="home-title mt-3">Soccer Leagues</div>
+            <div className="  mt-3 position-relative">
                 <span className="material-icons-outlined search">
                         search
                 </span>
-                <input className="input-search " placeholder="Search" type="text" onChange={(e) => getSort(e)}/>
+                <input className="input-search" placeholder="Search" type="text" onChange={(e) => getSort(e)}/>
             </div>
 
             {loader ? (
@@ -53,19 +53,31 @@ export const HomePage = () => {
                     <Spinner animation="border" variant="success"/>
                 </div>
             ) : (
-                <div className={"row"}>
+                <>
+                    <div className="home-title mt-2">Доступно по бесплатному тарифу</div>
+                    <div className={"row mt-1"}>
+                        {competitions.map((item) => item.plan === "TIER_ONE" && (
+                            <div key={item.id} className="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 d-flex flex-column justify-content-center">
+                                <img className="logo-league" src={item.area.ensignUrl || ball}/>
+                                <Link to={`/competition/${item.id}`} className={"active-league"}>
+                                    {item.name}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
 
-                    {competitions.map((item) => (
-                        <div key={item.id} className="col-3 mt-4 d-flex flex-column">
-                            <img className={"logo-league"} src={item.area.ensignUrl || ball}/>
-                            <Link to={`/competition/${item.id}`}
-                                  className={item.plan === "TIER_ONE" ? "active-league" : "inactive-league"}>
-
-                                {item.name}
-                            </Link>
-                        </div>
-                    ))}
-                </div>
+                    <div className="home-title mt-2">Недоступно в платном тарифе</div>
+                    <div className={"row mt-1"}>
+                        {competitions.map((item) => item.plan !== "TIER_ONE" && (
+                            <div key={item.id} className="col-6 col-sm-4 col-md-3 col-lg-2 mt-4 d-flex flex-column justify-content-center">
+                                <img className="logo-league" src={item.area.ensignUrl || ball}/>
+                                <Link to={`/competition/${item.id}`} className={"inactive-league"}>
+                                    {item.name}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </>
             )}
         </div>
     )

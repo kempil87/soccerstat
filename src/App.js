@@ -12,9 +12,9 @@ import {Contacts} from "./pages/Contacts/Contacts"
 
 function App() {
     return (
-        <div className="App container d-flex flex-column flex-fill" style={{}}>
+        <div className="App d-flex flex-column flex-fill" style={{}}>
             <Header/>
-            <div className="flex-fill">
+            <div className="flex-fill container ">
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>

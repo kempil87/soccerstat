@@ -21,39 +21,53 @@
 }
 
 .row {
-    width: 100%;
-    margin-top: 108px;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-
 }
 
-.home-tittle {
+.home-title {
     font-size: xx-large;
     cursor: default;
     border-bottom: solid 1px #dbdbdb;
     font-family: 'Quicksand', sans-serif;
 }
 
-.home-tittle:hover {
+.home-title:hover {
     opacity: 0.7;
 }
 
-.home-tittle::first-letter {
+.home-title::first-letter {
     color: darkseagreen;
 }
 
 .input-search {
     width: 50%;
     border-radius: 6px;
-    padding-left: 30px;
+    padding-left: 50px;
     height: 34px;
     color: black;
     font-weight: normal;
+    font-size: 20px;
 }
 
 .search {
     position: absolute;
     left: 16px;
-    top: 8px;
+    top: 7px;
+}
+@media (min-width: 0) and (max-width: 575px){
+    .logo-league {
+        height: 35px;
+        width: 35px;
+    }
+    .active-league {
+        font-size: 14px;
+    }
+    .inactive-league {
+        font-size: 14px;
+    }
+    .home-title {
+        font-size: 22px;
+
+    }
 }

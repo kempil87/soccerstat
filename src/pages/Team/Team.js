@@ -32,25 +32,28 @@ export const Team = () => {
             </div>
 
             {matches.map((item) => (
-                <div className="game-card col-3 mt-4" key={item.id}>
-                    <div>
-                        {`${item.awayTeam.name} - ${item.homeTeam.name}`}
+                <div className=" mt-4 col-12 col-sm-6 col-md-4 col-lg-3" key={item.id}>
+                    <div className={'game-card'}>
+                        <div>
+                            {`${item.awayTeam.name} - ${item.homeTeam.name}`}
+                        </div>
+                        <div>
+                            {moment().format() > item.utcDate ? (
+                                <div  className="score">
+                                    {getScore(item.score).awayScore} : {getScore(item.score).homeScore}
+                                </div>
+                            ) : (
+                                <div  className="score" >
+                                    No Result
+                                </div>
+                            )
+                            }
+                        </div>
+                        <div className="utc-date">
+                            {moment(item.utcDate).format("DD.MM.YYYY - HH:mm")}
+                        </div>
                     </div>
-                    <div>
-                        {moment().format() > item.utcDate ? (
-                            <div  className="score">
-                                {getScore(item.score).awayScore} : {getScore(item.score).homeScore}
-                            </div>
-                        ) : (
-                            <div  className="score" >
-                                No Result
-                            </div>
-                        )
-                        }
-                    </div>
-                    <div className="utc-date">
-                        {moment(item.utcDate).format("DD.MM.YYYY - HH:mm")}
-                    </div>
+
                 </div>
             ))}
         </div>

@@ -34,4 +34,10 @@
     opacity: 0.9;
     color: darkseagreen;
 }
+@media (min-width: 0) and (max-width: 400px) {
+    .logo-teams-table {
+        height: 28px;
+        width: 28px;
+    }
+}
 
