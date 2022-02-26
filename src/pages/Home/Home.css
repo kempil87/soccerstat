@@ -1,35 +1,14 @@
-.logo-league {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.active-league {
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-.active-league:hover {
-    color: darkseagreen;
-}
-
-.inactive-league {
-    color: gray;
-    pointer-events: none;
-    text-decoration: none;
-}
-
 .row {
     display: flex;
     font-family: 'Quicksand', sans-serif;
 }
 
 .home-title {
-    font-size: xx-large;
+    font-size: 26px;
     cursor: default;
     border-bottom: solid 1px #dbdbdb;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand" ,sans-serif ;
+    font-style: italic;
 }
 
 .home-title:hover {
@@ -56,16 +35,7 @@
     top: 7px;
 }
 @media (min-width: 0) and (max-width: 575px){
-    .logo-league {
-        height: 35px;
-        width: 35px;
-    }
-    .active-league {
-        font-size: 14px;
-    }
-    .inactive-league {
-        font-size: 14px;
-    }
+
     .home-title {
         font-size: 22px;
 

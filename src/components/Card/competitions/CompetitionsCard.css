@@ -1,0 +1,39 @@
+.logo-league {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.active-league {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.country-league{
+    color: black;
+    font-weight: bolder;
+    cursor: default;
+}
+
+.active-league:hover {
+    color: darkseagreen;
+}
+
+.inactive-league {
+    color: gray;
+    pointer-events: none;
+    text-decoration: none;
+}
+@media (min-width: 0) and (max-width: 575px){
+    .logo-league {
+        height: 35px;
+        width: 35px;
+    }
+    .active-league {
+        font-size: 14px;
+    }
+    .inactive-league {
+        font-size: 14px;
+    }
+
+}

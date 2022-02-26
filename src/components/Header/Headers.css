@@ -1,14 +1,15 @@
 .Header {
     width: 100%;
     min-height: 70px;
-    border-bottom: solid 1px #dbdbdb;
+    /*border-bottom: solid 1px #dbdbdb;*/
+    border-bottom: solid 1px darkgray;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*position: fixed;*/
-    font-family: 'Quicksand', sans-serif;
     text-align: center;
-    /*background-color: lightgrey;*/
+    position: fixed;
+    z-index: 50;
+    background-color: white;
 }
 
 .header-logo {
@@ -18,7 +19,6 @@
 
 .header-left {
     margin-top: 4px;
-    /*margin-right: 400px;*/
     margin-left: 50px;
 }
 
@@ -32,8 +32,9 @@
     color: black;
     cursor: pointer;
     text-decoration: none;
-
-
+    font-family: "Quicksand" ,sans-serif ;
+    font-size: 22px;
+    font-style: italic;
 }
 
 .header-content::first-letter {

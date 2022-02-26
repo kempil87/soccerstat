@@ -10,9 +10,12 @@
     align-items: center;
     font-weight: bold;
     border-radius: 8px;
-
 }
-/*.row{*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
+.score{
+    font-weight: lighter;
+}
+@media (min-width: 0) and (max-width: 575px){
+    .home-tittle{
+        font-size: 22px;
+    }
+}

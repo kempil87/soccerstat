@@ -1,0 +1,20 @@
+.paginate {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Quicksand" , sans-serif;
+    font-style: italic;
+    font-size: 16px;
+
+}
+
+.paginate li {
+  
+    list-style-type: none;
+
+}
+.paginate a {
+    text-decoration:none;
+}

@@ -8,36 +8,34 @@
     width: 50px;
 }
 
-.teams-tittle {
-    font-size: xx-large;
+.home-tittle {
+    font-size: 26px;
     cursor: default;
     border-bottom: solid 1px #dbdbdb;
     font-family: 'Quicksand', sans-serif;
+    font-style: italic;
 }
 
 
-.teams-tittle:hover {
+.home-tittle:hover {
     opacity: 0.7;
 }
 
-.teams-tittle::first-letter {
+.home-tittle::first-letter {
     color: darkseagreen;
 }
 
 
-.link {
-    color: black;
-    text-decoration: none;
-}
 
-.link:hover {
-    opacity: 0.9;
-    color: darkseagreen;
-}
+
 @media (min-width: 0) and (max-width: 400px) {
     .logo-teams-table {
         height: 28px;
         width: 28px;
+    }
+
+    .home-tittle {
+        font-size: 22px;
     }
 }
 
