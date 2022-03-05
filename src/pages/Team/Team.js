@@ -8,6 +8,7 @@ import Pagination from "../../components/Pagination/Pagination";
 import DatePicker from "react-datepicker";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import {teamNameHelper} from "../../helpers/teamNameHelper";
+import ru from "date-fns/locale/ru";
 
 
 export const Team = () => {
@@ -62,7 +63,7 @@ export const Team = () => {
                             }>
                             <div className="d-flex justify-content-between align-content-center date-picker">
 
-                                <DatePicker selected={startDate} onChange={(date) => changeSelect(date, "start")}/>
+                                <DatePicker locale={ru}  selected={startDate} onChange={(date) => changeSelect(date, "start")}/>
                             </div>
                         </OverlayTrigger>
                         <h6 className="mt-1">По</h6>
@@ -71,7 +72,7 @@ export const Team = () => {
                             overlay={<Tooltip>Выберите оба временных селектора</Tooltip>
                             }>
                             <div className="d-flex justify-content-between align-content-center date-picker">
-                                <DatePicker selected={endDate} onChange={(date) => changeSelect(date, "end")}/>
+                                <DatePicker locale={ru}  selected={endDate} onChange={(date) => changeSelect(date, "end")}/>
                             </div>
                         </OverlayTrigger>
                     </div>

@@ -54,7 +54,6 @@
     width: 25px;
     height: 30px;
     position: absolute;
-    cursor: pointer;
     margin-left: -50px;
 }
 
@@ -84,14 +83,27 @@
     height: 2px;
 }
 
-.menu-burger-btn-active {
-    background-color: orangered;
+.menu-burger-btn-active::after{
+    content: "";
+    background-color: black;
     height: 2px;
     transform: rotate(45deg);
+    width: 25px;
+    margin-left: -25px;
+    margin-bottom: 6px;
+    transition: all 0.3s;
+}
+.menu-burger-btn-active::before{
+    content: "";
+    background-color: black;
+    height: 2px;
+    transform: rotate(-45deg);
     width: 25px;
     margin-left: -50px;
     transition: all 0.3s;
 }
+
+
 
 
 @media (min-width: 0) and (max-width: 575px) {
