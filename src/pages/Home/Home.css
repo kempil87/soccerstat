@@ -4,10 +4,19 @@
 }
 
 .home-title {
-    font-size: 26px;
+    color: black;
+    font-size: 22px;
     cursor: default;
-    border-bottom: solid 1px #dbdbdb;
-    font-family: "Quicksand" ,sans-serif ;
+    font-family: "Quicksand", sans-serif;
+    font-style: italic;
+}
+
+.home-title-link {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
     font-style: italic;
 }
 
@@ -15,29 +24,56 @@
     opacity: 0.7;
 }
 
+.home-title-link:hover {
+    opacity: 0.7;
+    color: darkseagreen;
+}
+
 .home-title::first-letter {
     color: darkseagreen;
 }
 
+.home-title-link::first-letter {
+    color: darkseagreen;
+}
+
 .input-search {
-    width: 50%;
-    border-radius: 6px;
+    width: 33%;
+    border-radius: 17px;
     padding-left: 50px;
     height: 34px;
     color: black;
     font-weight: normal;
     font-size: 20px;
+    font-family: Quicksand, sans-serif;
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+
 .search {
+    color: rgba(0, 0, 0, 0.6);
     position: absolute;
     left: 16px;
     top: 7px;
 }
-@media (min-width: 0) and (max-width: 575px){
+
+.input-search::-webkit-input-placeholder {
+    color: darkseagreen;
+}
+
+@media (min-width: 0) and (max-width: 575px) {
 
     .home-title {
-        font-size: 22px;
+        font-size: 18px;
 
+    }
+
+    .home-title-link {
+        font-size: 18px;
+    }
+
+    .input-search {
+        width: 100%;
     }
 }

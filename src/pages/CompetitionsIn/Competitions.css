@@ -9,7 +9,7 @@
 }
 
 .home-tittle {
-    font-size: 26px;
+    font-size: 22px;
     cursor: default;
     border-bottom: solid 1px #dbdbdb;
     font-family: 'Quicksand', sans-serif;
@@ -36,6 +36,11 @@
 
     .home-tittle {
         font-size: 22px;
+    }
+}
+@media (min-width: 0) and (max-width: 575px) {
+    .date-picker{
+        flex-direction: column;
     }
 }
 

@@ -9,7 +9,8 @@
     text-decoration: none;
     font-weight: bolder;
 }
-.country-league{
+
+.country-league {
     color: black;
     font-weight: bolder;
     cursor: default;
@@ -19,21 +20,45 @@
     color: darkseagreen;
 }
 
+.fade.modal.show {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-title.h4 {
+    font-size: 22px;
+}
+
+.popup-content.modal-header {
+    font-family: Quicksand, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
 .inactive-league {
     color: gray;
-    pointer-events: none;
+    /*pointer-events: none;*/
     text-decoration: none;
 }
-@media (min-width: 0) and (max-width: 575px){
+
+.inactive-league:hover {
+    color: orangered;
+}
+
+@media (min-width: 0) and (max-width: 575px) {
     .logo-league {
         height: 35px;
         width: 35px;
     }
+
     .active-league {
         font-size: 14px;
     }
+
     .inactive-league {
         font-size: 14px;
     }
 
+    .modal-title {
+        font-size: 14px;
+    }
 }

@@ -1,4 +1,68 @@
-.matchCard{
-    border: 1px solid black;
+.matchCard {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-family: Quicksand, sans-serif;
+    font-weight: bolder;
+    align-items: center;
 
 }
+
+
+.match-Name-Team {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.match-status {
+    margin-left: 20px;
+    font-style: italic;
+    font-weight:500;
+
+}
+
+.result {
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.icon-time{
+    font-size: 18px;
+    color:green;
+}
+.icon-time-clock{
+    font-size: 18px;
+    color: #31afbe;
+}
+
+
+@media (min-width: 0) and (max-width: 567px) {
+    .match-Name-Team {
+        font-size: 12px;
+    }
+
+    .match-status {
+        margin-left: 10px;
+        font-style: italic;
+        font-size: 16px;
+
+    }
+    .match-date{
+        font-size: 12px;
+    }
+
+    .result {
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+}
+
+
